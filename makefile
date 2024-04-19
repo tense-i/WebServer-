@@ -1,9 +1,9 @@
-all: epoll_web
+all: event_web
 
-epoll_web: epoll_web.c
-	g++ -g -o epoll_web epoll_web.c
+event_web: event_web.c
+	g++ -g -o event_web event_web.c
 
 clean:
-	rm -f epoll_web
+	rm -f event_web
 
 .PHONY: all clean
